@@ -1,0 +1,48 @@
+
+.SideMenu {
+    width: 250px; /* Set the width of the side menu */
+    height: 100%; /* Make it full height */
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color */
+    position: fixed; /* Fixed position on the left side */
+    top: 0;
+    left: 0;
+    overflow-y: auto; /* Enable scrolling if content overflows */
+    padding-top: 20px; /* Add padding at the top */
+  }
+  
+  .SideMenuVertical {
+    width: 100%;
+    background-color: #333; /* Background color for menu items */
+  }
+  
+  .SideMenu .ant-menu-item {
+    color: #fff; /* Text color for menu items */
+  }
+  
+  /* Style for selected menu item */
+  .SideMenu .ant-menu-item-selected {
+    background-color: #444; /* Background color for selected item */
+  }
+  
+  /* Content container */
+  .ContentContainer {
+    margin-left: 250px; /* Adjust for the width of the side menu */
+    padding: 20px;
+    transition: margin-left 0.3s; /* Add smooth transition for content */
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    /* Collapse the side menu on smaller screens */
+    .SideMenu {
+      width: 0;
+      padding-top: 0;
+    }
+  
+    /* Adjust the margin for content */
+    .ContentContainer {
+      margin-left: 0;
+    }
+  }
+  
