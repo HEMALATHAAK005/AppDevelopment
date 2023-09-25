@@ -1,0 +1,84 @@
+.AppHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #6cbe02;; /* Navbar background color */
+  color: white; /* Text color for links and icons */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Adjust top and bottom padding as needed */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  z-index: 1000; /* Ensure the Navbar is above other content */
+}
+
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-left a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px; /* Adjust spacing between links */
+    font-size: 16px;
+  }
+  
+  .header-left a:last-child {
+    margin-right: 0; /* Remove margin from the last link */
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+  .header-right a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px; /* Adjust spacing between links */
+    font-size: 16px;
+  }
+  
+  /* Menu and Cart icons */
+  .header-left .anticon,
+  .header-right .anticon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Badge styles */
+  .header-left .ant-badge-count,
+  .header-right .ant-badge-count {
+    background-color: #ff4d4f; /* Badge background color for counts */
+    color: white; /* Text color for badge counts */
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 8px; /* Adjust badge padding */
+    border-radius: 50%;
+  }
+  
+  /* Drawer styles */
+  .ant-drawer {
+    background-color: #f0f2f5; /* Drawer background color */
+    color: #333; /* Text color inside the drawer */
+  }
+  
+  .ant-drawer-title {
+    background-color: #007bff; /* Drawer title background color */
+    color: white; /* Text color for drawer title */
+    font-weight: bold;
+  }
+  
+  /* Media query for small screens (e.g., mobile) */
+  @media (max-width: 768px) {
+    .AppHeader {
+      flex-direction: column; /* Stack elements vertically on small screens */
+    }
+  
+    .header-left,
+    .header-right {
+      margin: 10px 0; /* Add spacing between sections */
+    }
+  }
+  

@@ -1,0 +1,149 @@
+.servicehead {
+    
+  text-align: center;
+  font-family: 'Aritus', sans-serif; /* Replace 'Aritus' with your desired font name */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Adjust shadow properties as needed */
+  
+  color: #6cbe02; /* Text color */
+  background-color: #fff; /* Background color */
+  padding: -1000px ;/* Add padding around the text */
+  border-radius: 5px; 
+  font-size: 20%;
+}
+.product-center {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 3fr)); /* Use auto-fit instead of auto-fill */
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.product-item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(15, 0, 0, 0.184);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+.product-item:hover {
+  transform: translateY(-5px);
+}
+
+.product-info {
+  padding: 20px;
+}
+
+.product-info span {
+  font-size: 14px;
+  color: #888;
+}
+
+.product-info h4 {
+  font-size: 24px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.product-info a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  display: block;
+  margin-top: 10px;
+  transition: color 0.2s ease-in-out;
+}
+
+.product-info a:hover {
+  color: #ff966d;
+}
+
+.product-thumb {
+  width: 400%;
+  padding-top: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+button {
+  background-color: #ff966d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #fa538d;
+}
+
+.containerr{
+  display: flex;
+  justify-content: space-between; 
+}
+/* Footer.css */
+
+
+
+.footer1 {
+  background-color: #333;
+  color: white;
+  padding: 40px 0;
+}
+
+.footer-content1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.footer-contact11 p{
+  color:aliceblue;
+}
+
+.footer-contact1,
+.footer-links1 {
+  flex: 1;
+  max-width: 300px;
+}
+
+.footer-contact1 h3,
+.footer-links1 h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-contact1 p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.footer-links1 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links1 li {
+  margin-bottom: 8px;
+}
+
+.footer-links1 a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links1 a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom1 {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #555;
+}
